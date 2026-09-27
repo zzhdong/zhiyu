@@ -1,10 +1,97 @@
 <!doctype html>
 <html lang="zh-Hans">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><title>知域 · Zhiyu</title><link rel="stylesheet" href="./styles.css"></head>
-<body><main>
-<header><div class="brand">ZHIYU / 知域</div><h1>知域</h1><p class="lead">所需尽在一域。面向日常使用的时钟、日历、天气与设备工具。</p>
-<nav><a href="./privacy/">隐私政策 / Privacy Policy</a><a href="./support/">支持 / Support</a></nav></header>
-<section class="card"><h2>关于知域</h2><p>知域是一款 iPhone 与 iPad 工具 App。核心功能以本地处理为主；需要网络或系统权限的功能会在对应页面说明用途，并遵循 iOS 的系统授权流程。</p></section>
-<section class="card"><h2>About Zhiyu</h2><p>Zhiyu is a utility app for iPhone and iPad. Core features are primarily processed on device. Features that require network access or system permissions explain their purpose and follow the iOS permission flow.</p></section>
-<footer>© 2026 Zhiyu. Individual developer.</footer>
-</main></body></html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="知域 Zhiyu — 时钟、日历、天气与设备信息，一站式日常工具。">
+  <title>知域 · Zhiyu</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="topbar">
+    <div class="shell">
+      <a class="logo" href="./"><span class="logo-mark">域</span><span>知域<small>Zhiyu</small></span></a>
+      <nav class="nav" aria-label="主导航">
+        <a aria-current="page" href="./">首页</a>
+        <a href="./privacy/">隐私</a>
+        <a href="./support/">支持</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="shell">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Everyday tools, one place</div>
+        <h1>所需尽在<span>一域</span></h1>
+        <p class="lead">把时钟、日历、天气与设备信息收进一个安静、清晰的工具空间。为 iPhone 与 iPad 打造，不需要账号，不靠广告。</p>
+        <div class="actions">
+          <a class="button primary" href="./support/">获取支持</a>
+          <a class="button" href="./privacy/">查看隐私政策</a>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit"></div><div class="orbit two"></div>
+        <div class="device-stack">
+          <div class="mock">
+            <div class="mock-top"></div>
+            <div class="mock-grid">
+              <div class="mock-card"><span>CLOCK</span><strong>时钟</strong></div>
+              <div class="mock-card"><span>CALENDAR</span><strong>日历</strong></div>
+              <div class="mock-card"><span>WEATHER</span><strong>天气</strong></div>
+              <div class="mock-card"><span>DEVICE</span><strong>设备</strong></div>
+              <div class="mock-card wide"><span>WIDGETS · iPHONE · iPAD</span><strong>日常工具，一处完成</strong></div>
+            </div>
+          </div>
+        </div>
+        <div class="badge-float one">无广告</div>
+        <div class="badge-float two">无需账号</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <div><div class="eyebrow">Core tools</div><h2>四个核心工具</h2></div>
+        <p>不是堆功能，而是把每天真正会打开的几个工具做得更集中、更清楚。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature"><div class="icon">◷</div><h3>时钟</h3><p>本地时间、世界时区与多种时钟小组件。</p></article>
+        <article class="feature"><div class="icon">▦</div><h3>日历</h3><p>公历、农历、节假日、提醒与系统日历协作。</p></article>
+        <article class="feature"><div class="icon">☼</div><h3>天气</h3><p>Apple Weather 与 MET Norway 多源天气信息。</p></article>
+        <article class="feature"><div class="icon">⌁</div><h3>设备信息</h3><p>设备、存储、电池、网络与按需硬件测试。</p></article>
+      </div>
+    </section>
+
+    <section class="section trust">
+      <div class="panel accent">
+        <div class="eyebrow">Privacy by design</div>
+        <h2>需要权限时，再向你请求。</h2>
+        <p>知域尽量把偏好、缓存与工具状态留在设备本地。定位、相机、麦克风、Motion、Face ID 与日历只在你主动使用对应功能时调用。</p>
+        <div class="checks">
+          <div class="check"><b>✓</b><div><strong>无广告 SDK</strong><br><span class="meta">不使用广告标识符进行跨 App / 网站跟踪。</span></div></div>
+          <div class="check"><b>✓</b><div><strong>无账号系统</strong><br><span class="meta">当前版本无需注册登录即可使用。</span></div></div>
+          <div class="check"><b>✓</b><div><strong>一次性付费</strong><br><span class="meta">当前版本无订阅、无 App 内购买。</span></div></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="eyebrow">Support</div>
+        <h2>有问题，直接找到开发者。</h2>
+        <p>可通过 Email 或 GitHub Issues 联系。隐私政策、支持说明与数据来源保持公开。</p>
+        <div class="actions">
+          <a class="button" href="mailto:zzhdong@gmail.com">zzhdong@gmail.com</a>
+          <a class="button" href="https://github.com/zzhdong/zhiyu/issues">GitHub Issues</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-row">
+      <span>© 2026 Zhiyu · Individual developer</span>
+      <nav><a href="./privacy/">Privacy</a><a href="./support/">Support</a><a href="mailto:zzhdong@gmail.com">Email</a></nav>
+    </div>
+  </footer>
+</body>
+</html>
