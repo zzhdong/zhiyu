@@ -21,7 +21,7 @@
       <div class="eyebrow">Privacy policy</div>
       <h1>隐私，应该清楚说明。</h1>
       <p class="lead">知域只在功能确实需要时访问相应数据，并尽量让处理留在设备本地。下面列出当前版本的数据处理方式。</p>
-      <p class="meta">更新日期：2026年10月3日 · Last updated: 3 October 2026</p>
+      <p class="meta">更新日期：2026年10月4日 · Last updated: 4 October 2026</p>
     </section>
 
     <div class="content-layout">
@@ -35,7 +35,7 @@
       <article class="article">
         <div class="notice"><strong>摘要：</strong> 无广告 SDK、无广告标识符、无账号系统；定位等敏感权限均按需请求。</div>
         <section id="principles"><h2>1. 基本原则</h2><p>知域只在你主动使用相关功能时访问必要的数据，并尽量把设置、缓存与工具状态保留在设备本地。知域不包含广告 SDK，不使用广告标识符，也不为跨 App 或网站的广告目的跟踪用户。</p></section>
-        <section id="location"><h2>2. 位置与天气</h2><p>当你主动选择“使用我的位置”或开始定位测试时，知域会在取得系统授权后获取当前位置。天气查询会把所需的经纬度发送给 Apple Weather（WeatherKit）以及 MET Norway。</p><p>MET Norway 的服务条款说明，直接从 App 调用其 API 时，请求 IP 地址以及请求中包含的地理坐标会保存在其访问日志中。知域使用这些数据仅用于提供天气功能，不用于广告跟踪。</p><p>知域将当前位置写入本地持久化状态前会降低坐标精度；天气小组件不会接收精确经纬度。</p></section>
+        <section id="location"><h2>2. 位置与天气</h2><p>当你主动选择“使用我的位置”或开始定位测试时，知域会在取得系统授权后获取当前位置。天气查询会把所需的经纬度发送给 Apple Weather（WeatherKit）以及 MET Norway。</p><p>当前位置在写入本地持久化状态前会降低到约 0.01° 的区域级精度。天气小组件不会自行调用 CoreLocation 或申请后台定位；当 iOS / WidgetKit 唤醒小组件生成新的 Timeline 且已有天气不再新鲜时，小组件可使用这份已保存的区域级坐标直接请求 MET Norway 更新天气。</p><p>MET Norway 的服务条款说明，直接从 App 或小组件调用其 API 时，请求 IP 地址以及请求中包含的地理坐标可能保存在其访问日志中。知域使用这些数据仅用于提供天气功能，不用于广告跟踪。</p></section>
         <section id="local"><h2>3. 本地数据</h2><p>应用偏好、保存的天气地点、缓存以及小组件共享状态主要保存在设备或 App Group 中。知域没有用户账号系统，也不会把这些本地偏好用于建立广告画像。</p></section>
         <section id="sensors"><h2>4. 相机、麦克风、Motion 与 Face ID</h2><p>这些能力仅在你主动开始对应设备测试或测量工具时调用。设备测试的相机画面和麦克风测试录音不会由知域上传。Face ID 身份验证由 iOS LocalAuthentication 处理，知域不会获得 Face ID 生物特征模板。</p></section>
         <section id="measurement"><h2>5. 测量工具</h2><p>噪音测试仅在你主动开始后读取麦克风输入并在内存中计算估算声级，不保存可回放的原始录音，也不使用位置。</p><p>夜视仪和心率测试的相机帧仅在设备本机处理，不上传或长期保存。夜视仪只有在你主动点击截图时才生成一张可分享图片；知域不会自动保存录像。</p><p>心率测试通过后置摄像头与闪光灯观察指尖颜色的周期变化，以 PPG 思路估算本次 BPM。该功能不接入 HealthKit，不读取或写入 Apple 健康，也不建立或保存健康历史；结果仅供日常参考，不用于医疗诊断或决策。</p></section>
@@ -46,7 +46,7 @@
         <section id="control"><h2>10. 你的选择</h2><p>你可以在 iOS“设置”中拒绝或撤回定位、相机、麦克风、Motion、Face ID 或日历权限，并可在知域中删除保存的天气地点。删除 App 会移除 App 本地保存的数据；此前由你主动写入系统日历的事件属于系统日历数据，不会因卸载知域而自动删除。</p></section>
         <section id="contact"><h2>11. 联系方式</h2><p>隐私或支持问题请发送邮件至 <a href="mailto:zzhdong@gmail.com">zzhdong@gmail.com</a>。</p></section>
 
-        <section><h2>English summary</h2><p>Zhiyu accesses data only when needed for features you actively use and keeps preferences, caches and tool state on device wherever possible. It contains no advertising SDK, uses no advertising identifier, and has no user-account system. Location is used only for user-initiated current-location weather or the location test. Weather requests may send the required coordinates to Apple Weather and MET Norway. Camera, microphone, motion, Face ID, calendar and photo access are used only for the corresponding user-initiated features.</p><p>Measurement tools are processed on-device. Noise Test does not save raw recordings. Night Vision and Heart Rate Test do not upload or retain camera frames; Night Vision creates an image only when you explicitly capture one. Heart Rate Test estimates BPM from camera PPG for the current session only, does not access HealthKit or Apple Health, stores no health history, and is not for medical diagnosis or decisions.</p><p>For privacy or support questions, email <a href="mailto:zzhdong@gmail.com">zzhdong@gmail.com</a>.</p></section>
+        <section><h2>English summary</h2><p>Zhiyu accesses data only when needed for its features and keeps preferences, caches and tool state on device wherever possible. It contains no advertising SDK, uses no advertising identifier, and has no user-account system. Current location is acquired only after a user-initiated foreground request. Before persistence, that location is reduced to about 0.01° area-level precision. When iOS / WidgetKit requests a new Weather widget timeline and existing weather is no longer fresh, the widget may use that stored area-level coordinate to query MET Norway directly; it does not invoke Core Location or use background location. Weather requests may therefore send coordinates to Apple Weather and/or MET Norway, whose service logs may include request IP addresses and coordinates.</p><p>Measurement tools are processed on-device. Noise Test does not save raw recordings. Night Vision and Heart Rate Test do not upload or retain camera frames; Night Vision creates an image only when you explicitly capture one. Heart Rate Test estimates BPM from camera PPG for the current session only, does not access HealthKit or Apple Health, stores no health history, and is not for medical diagnosis or decisions.</p><p>For privacy or support questions, email <a href="mailto:zzhdong@gmail.com">zzhdong@gmail.com</a>.</p></section>
       </article>
     </div>
   </main>
