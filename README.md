@@ -8,7 +8,7 @@
 **[前往 App Store 下载知域](https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439)** · **[访问官方网站](https://zzhdong.github.io/zhiyu/)** · **[技术支持](https://zzhdong.github.io/zhiyu/support/)**
 
 <p align="center">
-  <a href="https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439"><img src="assets/readme-banner.svg" alt="知域品牌横幅：日常工具，自成一域（概念插画，非应用截图）" width="100%"></a>
+  <a href="https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439"><img src="assets/readme-banner-zh-Hans.jpg" alt="知域 App Store 宣传素材：真实应用界面与功能展示" width="100%"></a>
 </p>
 
 > **已在 App Store 上架** · 支持 iPhone / iPad · 需要 iOS / iPadOS 17.6 或更高版本
@@ -36,6 +36,10 @@
 ---
 
 ## English
+
+<p align="center">
+  <a href="https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439"><img src="assets/readme-banner-en-GB.jpg" alt="Zhiyu App Store creative asset featuring real app screens" width="100%"></a>
+</p>
 
 **Zhiyu — Everyday tools, beautifully together.**
 
