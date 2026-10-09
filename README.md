@@ -63,7 +63,7 @@ Preferences and caches are kept on your device wherever possible. System permiss
 
 ### Support
 
-For help with weather, calendars, widgets or device tools, visit **[Support](https://zzhdong.github.io/zhiyu/support/)** or email **[zzhdong@gmail.com](mailto:zzhdong@gmail.com)**. Please include your device model, OS version, app version and steps to reproduce, without sharing unrelated sensitive data.
+For help with weather, calendars, widgets or device tools, visit **[Support](https://zzhdong.github.io/zhiyu/en/support/)** or email **[zzhdong@gmail.com](mailto:zzhdong@gmail.com)**. Please include your device model, OS version, app version and steps to reproduce, without sharing unrelated sensitive data.
 
 ---
 
