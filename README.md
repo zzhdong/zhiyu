@@ -45,7 +45,7 @@
 
 Zhiyu is an everyday utilities app for iPhone and iPad, bringing time, calendars, weather and device information into one thoughtfully organised space.
 
-**[Download on the App Store](https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439)** · **[Official website](https://zzhdong.github.io/zhiyu/)** · **[Support](https://zzhdong.github.io/zhiyu/support/)**
+**[Download on the App Store](https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439)** · **[Official website](https://zzhdong.github.io/zhiyu/en/)** · **[Support](https://zzhdong.github.io/zhiyu/en/support/)**
 
 ### Everyday essentials, in one place
 
@@ -59,7 +59,7 @@ Zhiyu is an everyday utilities app for iPhone and iPad, bringing time, calendars
 
 Zhiyu is a **one-time paid download**, with no subscriptions, in-app purchases or advertising SDKs in the current release. No account is required.
 
-Preferences and caches are kept on your device wherever possible. System permissions are requested when you use the relevant features; weather requests send the necessary location information to weather providers. See the **[Privacy Policy](https://zzhdong.github.io/zhiyu/privacy/)** for details.
+Preferences and caches are kept on your device wherever possible. System permissions are requested when you use the relevant features; weather requests send the necessary location information to weather providers. See the **[Privacy Policy](https://zzhdong.github.io/zhiyu/en/privacy/)** for details.
 
 ### Support
 

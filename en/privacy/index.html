@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="How Zhiyu handles device data, location, weather providers, permissions and on-device measurement tools.">
+  <title>Privacy Policy · Zhiyu</title>
+  <link rel="canonical" href="https://zzhdong.github.io/zhiyu/en/privacy/">
+  <link rel="alternate" hreflang="zh-Hans" href="https://zzhdong.github.io/zhiyu/privacy/">
+  <link rel="alternate" hreflang="en" href="https://zzhdong.github.io/zhiyu/en/privacy/">
+  <link rel="alternate" hreflang="x-default" href="https://zzhdong.github.io/zhiyu/privacy/">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="topbar"><div class="shell">
+    <a class="logo" href="/zhiyu/en/" aria-label="Zhiyu home"><span class="logo-mark" aria-hidden="true">域</span><span>Zhiyu<small>知域</small></span></a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="/zhiyu/en/">Home</a>
+      <a aria-current="page" href="/zhiyu/en/privacy/">Privacy</a>
+      <a href="/zhiyu/en/support/">Support</a>
+      <a class="language" href="/zhiyu/privacy/" lang="zh-Hans" hreflang="zh-Hans" aria-label="切换到简体中文">简体中文</a>
+    </nav>
+  </div></div>
+  <main class="shell" id="main">
+
+    <section class="page-hero">
+      <div class="eyebrow">Privacy policy</div>
+      <h1>Privacy, clearly explained.</h1>
+      <p class="lead">Zhiyu accesses information only when a feature needs it and keeps processing on your device wherever possible. This policy explains how the current version handles data.</p>
+      <p class="meta">Last updated: 4 October 2026</p>
+    </section>
+
+    <div class="content-layout">
+      <aside class="toc" aria-label="On this page">
+        <strong>Contents</strong>
+        <a href="#principles">Principles</a><a href="#location">Location &amp; weather</a><a href="#local">Local data</a>
+        <a href="#sensors">Device permissions</a><a href="#measurement">Measurement tools</a><a href="#photos">Photos</a>
+        <a href="#calendar">Calendar &amp; notifications</a><a href="#device">Device &amp; network</a>
+        <a href="#third-party">Third-party services</a><a href="#control">Your choices</a><a href="#contact">Contact</a>
+      </aside>
+
+      <article class="article">
+        <div class="notice"><strong>At a glance:</strong> No advertising SDKs, advertising identifiers or user account system. Sensitive permissions, including location, are requested when needed.</div>
+
+        <section id="principles"><h2>1. Our principles</h2>
+          <p>Zhiyu accesses only the information necessary when you actively use a related feature. Settings, caches and tool state stay on your device wherever possible. Zhiyu contains no advertising SDKs, does not use advertising identifiers and does not track people across apps or websites for advertising purposes.</p>
+        </section>
+
+        <section id="location"><h2>2. Location and weather</h2>
+          <p>When you actively choose “Use My Location” or start a location test, Zhiyu obtains your current location only after iOS grants permission. Weather queries send the latitude and longitude necessary for the request to Apple Weather (WeatherKit) and MET Norway.</p>
+          <p>Before saving your current location to persistent local storage, Zhiyu reduces its precision to approximately 0.01° (an area-level location). The Weather widget does not call Core Location or request background location. When iOS / WidgetKit gives the widget an opportunity to generate a new timeline and the stored weather is no longer fresh, it may use the saved area-level coordinates to request updated weather directly from MET Norway.</p>
+          <p>MET Norway's terms explain that direct API requests from the app or widget may be logged with the request IP address and geographic coordinates. Zhiyu uses this information to provide weather features, not for advertising tracking.</p>
+        </section>
+
+        <section id="local"><h2>3. Data stored locally</h2>
+          <p>Preferences, saved weather locations, caches and widget-sharing state are stored primarily on your device or in an App Group. Zhiyu has no user account system and does not use these local preferences to build advertising profiles.</p>
+        </section>
+
+        <section id="sensors"><h2>4. Camera, microphone, motion sensors and Face ID</h2>
+          <p>These capabilities are used only when you actively start a corresponding device test or measurement tool. Camera footage and microphone test audio from device checks are not uploaded by Zhiyu. Face ID authentication is handled by iOS LocalAuthentication; Zhiyu does not receive your Face ID biometric templates.</p>
+        </section>
+
+        <section id="measurement"><h2>5. Measurement tools</h2>
+          <p>Noise Test accesses microphone input only after you start it. It calculates an estimated sound level in memory, does not save replayable raw recordings and does not use your location.</p>
+          <p>Night Vision and Heart Rate Test process camera frames on your device only; frames are not uploaded or kept long-term. Night Vision creates a shareable image only when you explicitly tap the capture button. Zhiyu does not automatically save video recordings.</p>
+          <p>Heart Rate Test uses the rear camera and flash to observe periodic colour changes in your fingertip, estimating BPM using a photoplethysmography (PPG) approach. It does not access HealthKit, read or write Apple Health data, or create or store a health history. Results are for everyday reference only and are not for medical diagnosis or decisions.</p>
+        </section>
+
+        <section id="photos"><h2>6. Photos</h2>
+          <p>When you choose a custom background for the clock or a widget, Zhiyu uses the system photo picker to access only the images you select. Copies needed by the feature are saved in the app's local / App Group storage. Zhiyu does not upload selected photos to developer-operated servers.</p>
+        </section>
+
+        <section id="calendar"><h2>7. Calendar, notifications and CloudKit</h2>
+          <p>The system calendar is read or written only when you grant permission and actively use its related features. Notification permission is used for reminders you create. CloudKit is used to retrieve and update public holiday data; it is not used to create user accounts or for advertising tracking.</p>
+        </section>
+
+        <section id="device"><h2>8. Device and network information</h2>
+          <p>Device information and results of tests you start are mainly processed locally. Wi-Fi SSID/BSSID details are shown locally only when Apple's public APIs and system permissions permit it. Zhiyu does not request location permission automatically just to read a network name and does not upload it to developer-operated servers.</p>
+          <p>In Device Information, Zhiyu checks only Nearby Interaction device capability to determine whether the device supports ultra-wideband (UWB) precise ranging. The current version does not create or run Nearby Interaction sessions or collect data about nearby devices.</p>
+        </section>
+
+        <section id="third-party"><h2>9. Third-party services</h2>
+          <ul>
+            <li>Apple Weather / WeatherKit: weather data and official attribution.</li>
+            <li>MET Norway: weather data; see its <a href="https://docs.api.met.no/doc/TermsOfService.html">Terms of Service</a>.</li>
+            <li>Apple CloudKit: public holiday data updates.</li>
+          </ul>
+        </section>
+
+        <section id="control"><h2>10. Your choices</h2>
+          <p>You can decline or withdraw location, camera, microphone, motion, Face ID or calendar permissions in iOS Settings, and remove saved weather locations in Zhiyu. Uninstalling the app removes its locally stored app data. Events you previously chose to write to your system calendar remain part of your calendar and are not automatically deleted when you uninstall Zhiyu.</p>
+        </section>
+
+        <section id="contact"><h2>11. Contact</h2>
+          <p>For privacy or support questions, email <a href="mailto:zzhdong@gmail.com">zzhdong@gmail.com</a>.</p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer><div class="shell footer-row"><span>© 2026 Zhiyu · Independent developer</span>
+    <nav aria-label="Footer navigation"><a href="/zhiyu/en/">Home</a><a href="/zhiyu/en/privacy/">Privacy</a><a href="/zhiyu/en/support/">Support</a><a href="mailto:zzhdong@gmail.com">Email</a></nav>
+  </div></footer>
+</body>
+</html>
