@@ -5,10 +5,10 @@
 知域是一款为 iPhone 与 iPad 设计的日常工具 App。  
 把时间、日历、天气和设备信息放在同一个清晰、舒适的空间，让常用工具更容易找到，也更顺手。
 
-**[前往 App Store 下载知域](https://apps.apple.com/app/id6799164439)** · **[访问官方网站](https://zzhdong.github.io/zhiyu/)** · **[技术支持](https://zzhdong.github.io/zhiyu/support/)**
+**[前往 App Store 下载知域](https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439)** · **[访问官方网站](https://zzhdong.github.io/zhiyu/)** · **[技术支持](https://zzhdong.github.io/zhiyu/support/)**
 
 <p align="center">
-  <a href="https://apps.apple.com/app/id6799164439"><img src="assets/readme-banner.svg" alt="知域品牌横幅：日常工具，自成一域（概念插画，非应用截图）" width="100%"></a>
+  <a href="https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439"><img src="assets/readme-banner.svg" alt="知域品牌横幅：日常工具，自成一域（概念插画，非应用截图）" width="100%"></a>
 </p>
 
 > **已在 App Store 上架** · 支持 iPhone / iPad · 需要 iOS / iPadOS 17.6 或更高版本
@@ -41,7 +41,7 @@
 
 Zhiyu is an everyday utilities app for iPhone and iPad, bringing time, calendars, weather and device information into one thoughtfully organised space.
 
-**[Download on the App Store](https://apps.apple.com/app/id6799164439)** · **[Official website](https://zzhdong.github.io/zhiyu/)** · **[Support](https://zzhdong.github.io/zhiyu/support/)**
+**[Download on the App Store](https://apps.apple.com/hk/app/%E7%9F%A5%E5%9F%9F-%E5%B7%A5%E5%85%B7%E7%AE%B1/id6799164439)** · **[Official website](https://zzhdong.github.io/zhiyu/)** · **[Support](https://zzhdong.github.io/zhiyu/support/)**
 
 ### Everyday essentials, in one place
 
