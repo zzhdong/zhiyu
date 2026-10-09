@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+<title id="title">知域 Zhiyu — 日常工具，自成一域</title>
+<desc id="desc">深蓝色知域品牌横幅，右侧以插画卡片呈现时钟、天气、日历和设备工具。</desc>
+<defs>
+  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101C35"/><stop offset="0.58" stop-color="#162B4E"/><stop offset="1" stop-color="#1D3B58"/></linearGradient>
+  <linearGradient id="light" x2="1" y2="1"><stop stop-color="#ACF1E1"/><stop offset="1" stop-color="#8EBFFB"/></linearGradient>
+  <pattern id="lines" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#BBDAEF" stroke-opacity=".07"/></pattern>
+</defs>
+<rect width="1200" height="420" rx="24" fill="url(#bg)"/>
+<rect width="1200" height="420" rx="24" fill="url(#lines)"/>
+<circle cx="895" cy="217" r="287" fill="#80CFF0" opacity=".05"/>
+<circle cx="93" cy="77" r="23" fill="none" stroke="#A5DFED" stroke-width="2.5"/>
+<path d="M82 76l11-10 11 10-11 13z" fill="none" stroke="#BCECF4" stroke-width="2"/>
+<text x="135" y="86" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="25" font-weight="600" fill="#DDEFF9">知域 <tspan fill="#9ABCD5">/ ZHIYU</tspan></text>
+<text x="75" y="203" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="61" font-weight="700" fill="#FFFFFF">日常工具</text>
+<text x="75" y="278" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="61" font-weight="700" fill="url(#light)">自成一域</text>
+<text x="78" y="325" font-family="system-ui,'PingFang SC','Microsoft YaHei',sans-serif" font-size="18" fill="#BBD2E6">时钟 · 日历 · 天气 · 设备信息 · 小组件</text>
+<path d="M78 350h347" stroke="#A7CDE5" stroke-opacity=".38"/>
+<text x="78" y="379" font-family="system-ui,sans-serif" font-size="13" letter-spacing="2" fill="#94B9D5">EVERYDAY TOOLS, BEAUTIFULLY TOGETHER.</text>
+<g stroke="#8CC9E9" stroke-opacity=".35">
+  <rect x="626" y="68" width="255" height="270" rx="27" fill="#263E60"/>
+  <rect x="905" y="90" width="227" height="141" rx="25" fill="#294764"/>
+  <rect x="905" y="248" width="227" height="132" rx="25" fill="#294764"/>
+  <rect x="561" y="289" width="122" height="105" rx="23" fill="#294764"/>
+</g>
+<text x="650" y="105" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2" fill="#BFDCEA">CLOCK</text>
+<circle cx="754" cy="212" r="82" fill="#132943" stroke="#80C2E0" stroke-width="2.5"/>
+<circle cx="754" cy="212" r="69" fill="none" stroke="#A3D1EC" stroke-opacity=".18"/>
+<path d="M754 154v11M812 212h-11M754 270v-11M696 212h11" stroke="#AFD7EB" stroke-width="3" stroke-linecap="round"/>
+<path d="M754 166v46l-29 29" fill="none" stroke="#F1FAFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="754" cy="212" r="5" fill="#A8EAE5"/>
+<text x="754" y="320" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" letter-spacing="2" fill="#B6D6EA">LOCAL · WORLD</text>
+<text x="930" y="125" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2" fill="#BFDCEA">WEATHER</text>
+<circle cx="967" cy="169" r="22" fill="#FFD28B"/>
+<path d="M951 200h80c13 0 18-13 12-22-5-7-12-9-19-8-7-18-34-18-43-1-17-3-30 8-30 22z" fill="#D8EDFE"/>
+<text x="1109" y="204" text-anchor="end" font-family="system-ui,sans-serif" font-size="33" font-weight="600" fill="#F3FBFF">24°</text>
+<text x="930" y="282" font-family="system-ui,sans-serif" font-size="14" letter-spacing="2" fill="#BFDCEA">CALENDAR</text>
+<text x="931" y="360" font-family="system-ui,sans-serif" font-size="61" font-weight="650" fill="#F5FBFF">09</text>
+<path d="M1030 343h71M1030 360h55" stroke="#98BFD9" stroke-width="5" stroke-linecap="round" opacity=".65"/>
+<text x="579" y="322" font-family="system-ui,sans-serif" font-size="12" letter-spacing="1" fill="#BFDCEA">DEVICE</text>
+<rect x="591" y="340" width="60" height="8" rx="4" fill="#8EDAE0"/>
+<rect x="591" y="356" width="44" height="8" rx="4" fill="#7FAEE4"/>
+<rect x="591" y="372" width="53" height="8" rx="4" fill="#B4D7EC"/>
+</svg>
