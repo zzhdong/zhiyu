@@ -106,6 +106,8 @@ h3{font-size:23px}
 .guide-back:hover{background:#13503d;color:#fff}
 .back-icon{width:40px;height:40px;display:grid;place-items:center;background:rgba(255,255,255,.17);border-radius:10px;font-size:24px}
 .detail-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(250px,.75fr);gap:23px;margin-bottom:110px;align-items:start}
+.detail-layout-no-image{grid-template-columns:minmax(0,1fr)}
+.detail-layout-no-image .detail-main{max-width:1050px;margin-inline:auto;width:100%}
 .detail-main{min-width:0}
 .flow-context{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:16px}
 .flow-context span{font-size:12px;color:var(--muted)}
