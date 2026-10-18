@@ -105,9 +105,14 @@ h3{font-size:23px}
 .guide-back{display:inline-flex;align-items:center;gap:12px;min-height:57px;padding:8px 25px 8px 9px;background:var(--jade);color:#fff;border-radius:14px;text-decoration:none;font-weight:800;font-size:16px;box-shadow:0 13px 25px rgba(27,98,73,.17)}
 .guide-back:hover{background:#13503d;color:#fff}
 .back-icon{width:40px;height:40px;display:grid;place-items:center;background:rgba(255,255,255,.17);border-radius:10px;font-size:24px}
-.detail-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(250px,.75fr);gap:23px;margin-bottom:110px;align-items:start}
+.detail-layout{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(250px,.75fr);column-gap:23px;row-gap:0;margin-bottom:110px;align-items:start}
+.detail-layout .flow-context{grid-column:1;grid-row:1}
+.detail-layout .detail-main{grid-column:1;grid-row:2;min-width:0}
+.detail-layout .guide-aside{grid-column:2;grid-row:2}
+/* The no-screenshot workflow starts at the left edge of the shared container. */
 .detail-layout-no-image{grid-template-columns:minmax(0,1fr)}
-.detail-layout-no-image .detail-main{max-width:1050px;margin-inline:auto;width:100%}
+.detail-layout-no-image .flow-context,
+.detail-layout-no-image .detail-main{max-width:1050px;width:100%;margin-left:0;margin-right:auto}
 .detail-main{min-width:0}
 .flow-context{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:16px}
 .flow-context span{font-size:12px;color:var(--muted)}
@@ -211,6 +216,9 @@ h3{font-size:23px}
  .guide-back{width:100%;min-height:56px}
  .guide-return>span{display:none}
  .detail-layout{grid-template-columns:1fr;margin-bottom:75px}
+ .detail-layout .flow-context{grid-column:1;grid-row:1}
+ .detail-layout .detail-main{grid-column:1;grid-row:2}
+ .detail-layout .guide-aside{grid-column:1;grid-row:3;margin-top:18px}
  .flow-grid{grid-template-columns:1fr}
  .flow-step{padding:23px;min-height:0}
  .guide-aside{position:static;display:flex;flex-direction:column;align-items:center}
