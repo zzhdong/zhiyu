@@ -52,27 +52,10 @@ h3{font-size:23px}
 .hero-phone{position:absolute;width:40%;max-width:240px;top:15px;left:8%;height:auto;border:8px solid #fdfdf9;border-radius:30px;box-shadow:0 29px 52px rgba(22,66,46,.2);transform:rotate(-6deg);z-index:2}
 .hero-tablet{position:absolute;width:65%;max-width:355px;right:0;top:104px;height:auto;border:8px solid #fdfdf9;border-radius:26px;box-shadow:0 26px 52px rgba(22,66,46,.16);transform:rotate(5deg);z-index:1}
 .home-route{padding:66px 0 0}
-.home-new{padding-top:78px}
-.home-new .section-heading{margin-bottom:22px}
-.new-tool-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
-.new-tool-card{display:flex;flex-direction:column;gap:12px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:18px;text-decoration:none;color:var(--ink);min-width:0;position:relative}
-.new-tool-card:hover{background:#eaf5ed;transform:translateY(-2px)}
-.new-tool-photo{align-self:center;width:auto;height:196px;border-radius:12px;object-fit:contain;box-shadow:0 9px 22px rgba(35,73,49,.12)}
-/* 2026.10.28 release cards. Text-only feature signs are editorial, not fake app screenshots. */
-.feature-glyph{display:grid;place-items:center;background:linear-gradient(145deg,#e4f4ed,#d5eadd);border:1px solid #bed9c8;border-radius:14px;min-height:128px;width:100%;font-size:30px;font-weight:850;letter-spacing:.05em;color:var(--jade)}
-.new-tool-card .card-action{position:absolute;right:19px;bottom:18px;color:var(--jade);font-size:20px}
-.release-tools{padding:4px 0 70px}
-.release-tools .section-heading{margin-bottom:22px}
-.release-tool-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
-.release-tool-link{background:var(--paper);border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);padding:23px 23px 18px;min-height:172px;position:relative}
-.release-tool-link:hover{background:var(--soft)}
-.release-tool-link strong{display:block;font-size:20px;line-height:1.4;margin-bottom:8px}
-.release-tool-link p{color:var(--muted);font-size:13px;line-height:1.7;padding-right:10px}
-.release-tool-link span{position:absolute;right:14px;bottom:12px;font-weight:800;color:var(--jade)}
-.release-intro,.release-paragraph{margin-top:18px;margin-bottom:14px}
-.new-tool-card span strong{display:block;font-size:19px;line-height:1.4}
-.new-tool-card span small{display:block;color:var(--muted);font-size:13px;line-height:1.6;margin-top:7px}
-.new-tool-card>span:last-child{position:absolute;right:19px;bottom:18px;color:var(--jade);font-size:20px}
+/* Related tools belong next to their existing screenshot-backed category. */
+.feature-subnav{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.feature-subnav-link{display:inline-flex;align-items:center;min-height:36px;padding:7px 12px;border:1px solid #a9cbb8;border-radius:20px;background:#eff7f1;font-size:13px;line-height:1.35;text-decoration:none;font-weight:700}
+.feature-subnav-link:hover{background:#e0eee4}
 .privacy-addendum{background:var(--paper);border:1px solid var(--line);border-radius:20px;margin-top:-52px;margin-bottom:96px;padding:40px 48px;max-width:1030px}
 .privacy-addendum h2{font-size:27px;margin:13px 0 18px}
 .privacy-addendum p:not(.eyebrow){margin-bottom:16px}
@@ -102,6 +85,10 @@ h3{font-size:23px}
 .feature-story:nth-child(even) .feature-photo{order:2}
 .feature-photo{min-height:375px;padding:28px 18px 0;background:linear-gradient(138deg,#dbece2,#eff5e9);display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
 .feature-photo img{height:355px;width:auto;max-width:85%;object-fit:contain;object-position:center bottom;border-radius:13px 13px 0 0;box-shadow:0 12px 27px rgba(35,73,49,.12)}
+/* Actual portrait iPhone with a landscape iPad screen, no fake UI. */
+.feature-photo-dual{position:relative;overflow:hidden}
+.feature-photo-dual .photo{position:absolute;height:315px;width:auto;max-width:44%;left:6%;bottom:0;z-index:2;object-fit:contain;object-position:center bottom}
+.feature-photo-dual .ipad-photo{position:absolute;width:73%;height:auto;max-height:236px;max-width:unset;right:2%;bottom:49px;z-index:1;object-fit:contain;border-radius:14px;box-shadow:0 13px 28px rgba(35,73,49,.14)}
 .feature-description{padding:58px 12%;display:flex;flex-direction:column;align-items:start;justify-content:center}
 .photo-note{color:var(--muted);font:650 11px/1.4 var(--font);margin-bottom:27px}
 .feature-number{color:var(--jade);font:800 11px var(--font);letter-spacing:.13em}
@@ -193,7 +180,6 @@ h3{font-size:23px}
  .hero-flex{min-height:580px;grid-template-columns:1fr 1fr}
  .hero-phone{left:0}
  .hero-tablet{right:-5%}
- .new-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
  .feature-description{padding:39px 9%}
  .detail-layout{grid-template-columns:minmax(0,1.4fr) minmax(210px,.7fr)}
  .flow-grid{grid-template-columns:1fr}
@@ -215,24 +201,6 @@ h3{font-size:23px}
  .hero-phone{width:36%;left:13%;max-width:180px;top:3px}
  .hero-tablet{width:58%;right:6%;top:77px}
  .home-route{padding-top:46px}
- .home-new{padding-top:47px}
- .new-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
- .new-tool-card{padding:12px}
- .new-tool-photo{height:148px}
- /* 2026.10.28 release cards. Text-only feature signs are editorial, not fake app screenshots. */
-.feature-glyph{display:grid;place-items:center;background:linear-gradient(145deg,#e4f4ed,#d5eadd);border:1px solid #bed9c8;border-radius:14px;min-height:128px;width:100%;font-size:30px;font-weight:850;letter-spacing:.05em;color:var(--jade)}
-.new-tool-card .card-action{position:absolute;right:19px;bottom:18px;color:var(--jade);font-size:20px}
-.release-tools{padding:4px 0 70px}
-.release-tools .section-heading{margin-bottom:22px}
-.release-tool-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
-.release-tool-link{background:var(--paper);border:1px solid var(--line);border-radius:18px;text-decoration:none;color:var(--ink);padding:23px 23px 18px;min-height:172px;position:relative}
-.release-tool-link:hover{background:var(--soft)}
-.release-tool-link strong{display:block;font-size:20px;line-height:1.4;margin-bottom:8px}
-.release-tool-link p{color:var(--muted);font-size:13px;line-height:1.7;padding-right:10px}
-.release-tool-link span{position:absolute;right:14px;bottom:12px;font-weight:800;color:var(--jade)}
-.release-intro,.release-paragraph{margin-top:18px;margin-bottom:14px}
-.new-tool-card span strong{font-size:16px}
- .new-tool-card span small{font-size:11px;padding-right:15px}
  .privacy-addendum{padding:26px 23px;margin-top:-55px}
  .route-cards{grid-template-columns:1fr;gap:10px}
  .route-cards a{min-height:76px;padding:16px 20px}
@@ -247,6 +215,8 @@ h3{font-size:23px}
  .feature-story:nth-child(even) .feature-photo{order:0}
  .feature-photo{min-height:0;height:320px;padding-top:20px}
  .feature-photo img{height:310px}
+ .feature-photo-dual .photo{height:257px;max-width:41%;left:4%}
+ .feature-photo-dual .ipad-photo{width:76%;max-height:175px;right:1%;bottom:53px}
  .feature-description{padding:27px 29px 32px}
  .feature-description h2{font-size:30px;margin:12px 0}
  .photo-note{margin-bottom:13px}
@@ -288,6 +258,3 @@ h3{font-size:23px}
  .article{padding:26px 20px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button:hover,.guide-list-card:hover{transform:none}}
-
-@media(max-width:900px){.release-tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:580px){.release-tool-grid{grid-template-columns:1fr}.feature-glyph{min-height:98px}}
